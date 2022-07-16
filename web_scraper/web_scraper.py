@@ -2,15 +2,17 @@ import requests
 from bs4 import BeautifulSoup
 import json
 
-config_path = './web_scraper/configs/tooele_weather.json'
-file = open(config_path)
-config = json.load(file)
+if __name__ == '__main__':
 
-url=config['url']
-response = requests.get(url)
+    config_path = './web_scraper/configs/tooele_weather.json'
+    file = open(config_path)
+    config = json.load(file)
 
-soup = BeautifulSoup(response.text, 'html.parser')
-print(soup.title)
+    url=config['url']
+    response = requests.get(url)
 
-# TODO : Parse html correctly
-print(soup.b)
+    soup = BeautifulSoup(response.text, 'html.parser')
+    print(soup.title)
+
+    # TODO : Parse html correctly
+    print(soup.b)
