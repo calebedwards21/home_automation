@@ -9,7 +9,7 @@ Install Docker Desktop
 - Windows [Install](https://docs.docker.com/desktop/install/windows-install/)
 - Linux [Install](https://docs.docker.com/desktop/install/linux-install/)
 
-Execute the following command in terminal to start Influx, Grafana, and Chronograf in containers
+Execute the following command from the home_automation/docker path in terminal to start Influx, Grafana, and Chronograf in containers from the docker-compose [file](./docker/docker-compose.yaml)
 > docker-compose up -d
 
 To STOP and REMOVE the containers run the following command
