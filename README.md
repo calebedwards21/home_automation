@@ -12,9 +12,6 @@ Install Docker Desktop
 Execute the following command from the home_automation/docker path in terminal to start Influx, Grafana, and Chronograf in containers from the docker-compose [file](./docker/docker-compose.yaml)
 > docker-compose up -d
 
-To STOP and REMOVE the containers run the following command
-> docker-compose down
-
 The services are available on their associated ports:
 - Grafana : localhost:3000
 - Influx : localhost:8086
@@ -22,5 +19,8 @@ The services are available on their associated ports:
 
 Can also view on Docker Desktop and open url or remote in to container from there
 
+To STOP and REMOVE the containers run the following command
+> docker-compose down
+
 Execute Dockerfile
-> docker image build -t web_scraper:0.0.1 .
+> IN PROGRESS docker image build -t web_scraper:0.0.1 .
